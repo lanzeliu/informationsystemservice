@@ -9,16 +9,18 @@ public class Student {
     private String lastName;
     private String imageUrl;
     private Map<Long, Course> enrolledCourses;
+    private String programName;
 
     public Student() {
 
     }
 
-    public Student(long studentId, String firstName, String lastName, String imageUrl) {
+    public Student(long studentId, String firstName, String lastName, String imageUrl, String programName) {
         this.studentId = studentId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.imageUrl = imageUrl;
+        this.programName = programName;
     }
 
     public long getStudentId() {
@@ -59,5 +61,13 @@ public class Student {
 
     public void setEnrolledCourses(Map<Long, Course> enrolledCourses) {
         this.enrolledCourses = enrolledCourses;
+    }
+
+    public String getProgramName() {
+        return programName;
+    }
+
+    public void setProgramName(String programName) {
+        this.programName = programName;
     }
 }

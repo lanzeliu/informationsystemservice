@@ -8,7 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe7df8d-acd7-4ce6-93e0-57c62bd3001b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/database/InMemoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/database/InMemoryDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/model/Lecture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/model/Lecture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/model/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/model/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/model/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/model/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/model/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -289,7 +292,9 @@
       <workItem from="1581998653207" duration="313000" />
       <workItem from="1581998970949" duration="332000" />
       <workItem from="1581999789659" duration="2729000" />
-      <workItem from="1582058837805" duration="8494000" />
+      <workItem from="1582058837805" duration="8640000" />
+      <workItem from="1582070700653" duration="176000" />
+      <workItem from="1582143299448" duration="4134000" />
     </task>
     <servers />
   </component>
@@ -305,11 +310,15 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="187" width="1071" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582000202945" />
-    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1582069533653">
+    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1582150229080">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1582060893117" />
-    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582069533653" />
+    <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582150229080" />
+    <state x="385" y="127" key="CommitChangelistDialog2" timestamp="1582070863769">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="385" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582070863769" />
     <state width="1126" height="295" key="GridCell.Tab.0.bottom" timestamp="1582008445832">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -358,5 +367,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1126" height="295" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582008445849" />
+    <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582070830605">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582070830605" />
   </component>
 </project>

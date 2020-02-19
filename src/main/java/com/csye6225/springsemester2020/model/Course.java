@@ -12,17 +12,18 @@ public class Course {
     private Map<Long, Student> havingStudent;
     private Professor professor;
     private Student TA;
-    private Program possessedProgram;
+    private String possessedProgram;
 
     public Course() {
 
     }
 
-    public Course(long courseId, String name, String roster, String board) {
+    public Course(long courseId, String name, String roster, String board, String possessedProgram) {
         this.courseId = courseId;
         this.name = name;
         this.roster = roster;
         this.board = board;
+        this.possessedProgram = possessedProgram;
     }
 
     public long getCourseId() {
@@ -89,12 +90,11 @@ public class Course {
         this.TA = TA;
     }
 
-    public Program getPossessedProgram() {
+    public String getPossessedProgram() {
         return possessedProgram;
     }
 
-    public void setPossessedProgram(Program possessedProgram) {
+    public void setPossessedProgram(String possessedProgram) {
         this.possessedProgram = possessedProgram;
     }
-
 }

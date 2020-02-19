@@ -1,6 +1,7 @@
 package com.csye6225.springsemester2020.model;
 
 import java.util.Date;
+import java.util.Map;
 
 public class Professor {
 
@@ -10,6 +11,8 @@ public class Professor {
     private String lastName;
     private String department;
     private Date joiningDate;
+    private Map<Long, Course> teachingCourses;
+    private String belongedProgram;
 
     // Default constructor
     public Professor() {
@@ -67,4 +70,19 @@ public class Professor {
         this.joiningDate = joiningDate;
     }
 
+    public Map<Long, Course> getTeachingCourses() {
+        return teachingCourses;
+    }
+
+    public void setTeachingCourses(Map<Long, Course> teachingCourses) {
+        this.teachingCourses = teachingCourses;
+    }
+
+    public String getBelongedProgram() {
+        return belongedProgram;
+    }
+
+    public void setBelongedProgram(String belongedProgram) {
+        this.belongedProgram = belongedProgram;
+    }
 }

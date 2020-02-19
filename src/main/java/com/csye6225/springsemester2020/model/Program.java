@@ -8,6 +8,7 @@ public class Program {
     private String name;
     private Map<Long, Course> havingCourses;
     private Map<Long, Student> havingStudents;
+    private Map<Long, Professor> havingProfessors;
 
     public Program() {
 
@@ -48,5 +49,13 @@ public class Program {
 
     public void setHavingStudents(Map<Long, Student> havingStudents) {
         this.havingStudents = havingStudents;
+    }
+
+    public Map<Long, Professor> getHavingProfessors() {
+        return havingProfessors;
+    }
+
+    public void setHavingProfessors(Map<Long, Professor> havingProfessors) {
+        this.havingProfessors = havingProfessors;
     }
 }
