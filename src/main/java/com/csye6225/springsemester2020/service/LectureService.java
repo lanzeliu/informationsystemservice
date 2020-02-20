@@ -22,7 +22,7 @@ public class LectureService {
 
     public Lecture addLecture(long courseId, Lecture lecture) {
         lecture.setLectureId(courseMap.size() + 1);
-        lecture.setPossessedCourse(courseMap.get(courseId));
+        lecture.setPossessedCourseName(courseMap.get(courseId).getName());
         courseMap.get(courseId).getHavingLectures().put(lecture.getLectureId(), lecture);
         return lecture;
     }
@@ -31,6 +31,7 @@ public class LectureService {
         if (lecture.getLectureId() <= 0) {
             return null;
         }
+        lecture.setPossessedCourseName(courseMap.get(courseId).getName());
         courseMap.get(courseId).getHavingLectures().put(lecture.getLectureId(), lecture);
         return lecture;
     }

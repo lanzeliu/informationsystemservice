@@ -1,9 +1,7 @@
 package com.csye6225.springsemester2020.service;
 
 import com.csye6225.springsemester2020.database.InMemoryDatabase;
-import com.csye6225.springsemester2020.model.Course;
-import com.csye6225.springsemester2020.model.Program;
-import com.csye6225.springsemester2020.model.Student;
+import com.csye6225.springsemester2020.model.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +9,10 @@ import java.util.Map;
 
 public class CourseService {
 
-    private Map<Long, Program> programMap = InMemoryDatabase.getProgramMap();
     private Map<Long, Course> courseMap = InMemoryDatabase.getCourseMap();
+    private Map<Long, Program> programMap = InMemoryDatabase.getProgramMap();
     private Map<Long, Student> studentMap = InMemoryDatabase.getStudentMap();
+    private Map<Long, Lecture> lectureMap = InMemoryDatabase.getLectureMap();
 
     public CourseService() {
 
@@ -32,11 +31,7 @@ public class CourseService {
     }
 
     public Course getOneCourseOfOneProgram(long programId, long courseId) {
-        Program program = programMap.get(programId);
-        if (program == null) {
-            return null;
-        }
-        return program.getHavingCourses().get(courseId);
+        return programMap.get(programId).getHavingCourses().get(courseId);
     }
 
     public Course addCourse(Course course) {
@@ -46,7 +41,7 @@ public class CourseService {
     }
 
     public Course addCourseOfOneProgram(long programId, Course course) {
-        course.setPossessedProgram(programMap.get(programId));
+        course.setPossessedProgramName(programMap.get(programId).getName());
         addCourse(course);
         programMap.get(programId).getHavingCourses().put(course.getCourseId(), course);
         return course;
@@ -56,6 +51,18 @@ public class CourseService {
         if (course.getCourseId() <= 0) {
             return null;
         }
+
+        for (Lecture l : courseMap.get(course.getCourseId()).getHavingLectures().values()) {
+            l.setPossessedCourseName(course.getName());
+        }
+
+        for (Student s : courseMap.get(course.getCourseId()).getHavingStudent().values()) {
+            s.setEnrolledCourses(course);
+        }
+
+        course.setProfessor(courseMap.get(course.getCourseId()).getProfessor());
+        course.setTA(courseMap.get(course.getCourseId()).getTA());
+
         courseMap.put(course.getCourseId(), course);
         return course;
     }
@@ -69,11 +76,20 @@ public class CourseService {
 
     public Course deleteCourseFromOneProgram(long programId, long courseId) {
         programMap.get(programId).getHavingCourses().remove(courseId);
-        courseMap.get(courseId).setPossessedProgram(null);
-        return courseMap.get(courseId);
+
+        for (Long lectureKey : courseMap.get(courseId).getHavingLectures().keySet()) {
+            lectureMap.remove(lectureKey);
+        }
+
+        for (Student s : courseMap.get(courseId).getHavingStudent().values()) {
+            s.deleteOneEnrolledCourse(courseId);
+        }
+
+        courseMap.get(courseId).getProfessor().deleteOneTeachingCourse(courseId);
+        courseMap.get(courseId).getTA().deleteTACourse();
+
+        return courseMap.remove(courseId);
     }
-
-
 
     public List<Student> getAllStudentsOfOneCourse(long courseId) {
         return new ArrayList<>(courseMap.get(courseId).getHavingStudent().values());
@@ -93,10 +109,10 @@ public class CourseService {
         return null;
     }
 
-    public Student removeStudent(long courseId, long studentId) {
+    public void deleteStudentFromOneCourse(long courseId, long studentId) {
         courseMap.get(courseId).getHavingStudent().remove(studentId);
         studentMap.get(studentId).getEnrolledCourses().remove(courseId);
-        return studentMap.get(studentId);
     }
+
 
 }

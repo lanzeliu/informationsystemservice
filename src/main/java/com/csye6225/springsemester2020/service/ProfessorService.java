@@ -12,7 +12,7 @@ public class ProfessorService {
     private Map<Long, Professor> professorMap = InMemoryDatabase.getProfessorMap();
 
     public ProfessorService() {
-        professorMap.put(1L, new Professor(1L, "Simon", "wang", "CoE"));
+
     }
 
     public List<Professor> getAllProfessors() {

@@ -1,14 +1,15 @@
 package com.csye6225.springsemester2020.model;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Program {
 
     private long programId;
     private String name;
-    private Map<Long, Course> havingCourses;
-    private Map<Long, Student> havingStudents;
-    private Map<Long, Professor> havingProfessors;
+    private Map<Long, Course> havingCourses = new HashMap<>();
+    private Map<Long, Student> havingStudents = new HashMap<>();
+    private Map<Long, Professor> havingProfessors = new HashMap<>();
 
     public Program() {
 

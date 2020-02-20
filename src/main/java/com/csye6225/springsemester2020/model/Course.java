@@ -1,5 +1,6 @@
 package com.csye6225.springsemester2020.model;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Course {
@@ -8,11 +9,11 @@ public class Course {
     private String name;
     private String roster;
     private String board;
-    private Map<Long, Lecture> havingLectures;
-    private Map<Long, Student> havingStudent;
+    private Map<Long, Lecture> havingLectures = new HashMap<>();
+    private Map<Long, Student> havingStudent = new HashMap<>();
     private Professor professor;
     private Student TA;
-    private String possessedProgram;
+    private String possessedProgramName;
 
     public Course() {
 
@@ -23,7 +24,7 @@ public class Course {
         this.name = name;
         this.roster = roster;
         this.board = board;
-        this.possessedProgram = possessedProgram;
+        this.possessedProgramName = possessedProgram;
     }
 
     public long getCourseId() {
@@ -90,11 +91,11 @@ public class Course {
         this.TA = TA;
     }
 
-    public String getPossessedProgram() {
-        return possessedProgram;
+    public String getPossessedProgramName() {
+        return possessedProgramName;
     }
 
-    public void setPossessedProgram(String possessedProgram) {
-        this.possessedProgram = possessedProgram;
+    public void setPossessedProgramName(String possessedProgramName) {
+        this.possessedProgramName = possessedProgramName;
     }
 }

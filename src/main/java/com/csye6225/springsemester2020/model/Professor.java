@@ -12,7 +12,7 @@ public class Professor {
     private String department;
     private Date joiningDate;
     private Map<Long, Course> teachingCourses;
-    private String belongedProgram;
+    private String belongedProgramName;
 
     // Default constructor
     public Professor() {
@@ -20,12 +20,13 @@ public class Professor {
     }
 
     // Custom constructor
-    public Professor(long professorId, String firstName, String lastName, String department) {
+    public Professor(long professorId, String firstName, String lastName, String department, String belongedProgramName) {
         this.professorId = professorId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.department = department;
         this.joiningDate = new Date();
+        this.belongedProgramName = belongedProgramName;
     }
 
     // Getter
@@ -74,15 +75,21 @@ public class Professor {
         return teachingCourses;
     }
 
-    public void setTeachingCourses(Map<Long, Course> teachingCourses) {
-        this.teachingCourses = teachingCourses;
+    public void setTeachingCourses(Course course) {
+        this.teachingCourses.put(course.getCourseId(), course);
     }
 
-    public String getBelongedProgram() {
-        return belongedProgram;
+    public void deleteOneTeachingCourse(long courseId) {
+        this.teachingCourses.remove(courseId);
     }
 
-    public void setBelongedProgram(String belongedProgram) {
-        this.belongedProgram = belongedProgram;
+    public String getBelongedProgramName() {
+        return belongedProgramName;
     }
+
+    public void setBelongedProgramName(String belongedProgramName) {
+        this.belongedProgramName = belongedProgramName;
+    }
+
+
 }

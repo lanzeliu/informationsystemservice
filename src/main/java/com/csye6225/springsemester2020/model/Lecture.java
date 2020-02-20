@@ -6,18 +6,18 @@ public class Lecture {
     private String name;
     private String note;
     private String assoMaterial;
-    private String possessedCourse;
+    private String possessedCourseName;
 
     public Lecture() {
 
     }
 
-    public Lecture(long lectureId, String name, String note, String assoMaterial, String possessedCourse) {
+    public Lecture(long lectureId, String name, String note, String assoMaterial, String possessedCourseName) {
         this.lectureId = lectureId;
         this.name = name;
         this.note = note;
         this.assoMaterial = assoMaterial;
-        this.possessedCourse = possessedCourse;
+        this.possessedCourseName = possessedCourseName;
     }
 
     public String getName() {
@@ -52,11 +52,11 @@ public class Lecture {
         this.name = name;
     }
 
-    public String getPossessedCourse() {
-        return possessedCourse;
+    public String getPossessedCourseName() {
+        return possessedCourseName;
     }
 
-    public void setPossessedCourse(String possessedCourse) {
-        this.possessedCourse = possessedCourse;
+    public void setPossessedCourseName(String possessedCourseName) {
+        this.possessedCourseName = possessedCourseName;
     }
 }

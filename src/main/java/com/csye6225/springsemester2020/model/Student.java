@@ -1,5 +1,6 @@
 package com.csye6225.springsemester2020.model;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Student {
@@ -8,8 +9,9 @@ public class Student {
     private String firstName;
     private String lastName;
     private String imageUrl;
-    private Map<Long, Course> enrolledCourses;
+    private Map<Long, Course> enrolledCourses = new HashMap<>();
     private String programName;
+    private String TACourse;
 
     public Student() {
 
@@ -59,8 +61,12 @@ public class Student {
         this.imageUrl = imageUrl;
     }
 
-    public void setEnrolledCourses(Map<Long, Course> enrolledCourses) {
-        this.enrolledCourses = enrolledCourses;
+    public void setEnrolledCourses(Course course) {
+        this.enrolledCourses.put(course.getCourseId(), course);
+    }
+
+    public void deleteOneEnrolledCourse(long courseId) {
+        this.enrolledCourses.remove(courseId);
     }
 
     public String getProgramName() {
@@ -69,5 +75,17 @@ public class Student {
 
     public void setProgramName(String programName) {
         this.programName = programName;
+    }
+
+    public String getTACourse() {
+        return TACourse;
+    }
+
+    public void setTACourse(String TACourse) {
+        this.TACourse = TACourse;
+    }
+
+    public void deleteTACourse() {
+        this.TACourse = null;
     }
 }
