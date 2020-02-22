@@ -16,8 +16,8 @@ public class Program {
     private Map<Long, Course> havingCourses = new HashMap<>();
     @JsonIgnore
     private Map<Long, Student> havingStudents = new HashMap<>();
-    @JsonIgnore
-    private Map<Long, Professor> havingProfessors = new HashMap<>();
+    //@JsonIgnore
+    //private Map<Long, Professor> havingProfessors = new HashMap<>();
 
     public Program() {
 
@@ -60,13 +60,15 @@ public class Program {
         this.havingStudents = havingStudents;
     }
 
-    public Map<Long, Professor> getHavingProfessors() {
+    /*public Map<Long, Professor> getHavingProfessors() {
         return havingProfessors;
     }
 
     public void setHavingProfessors(Map<Long, Professor> havingProfessors) {
         this.havingProfessors = havingProfessors;
     }
+
+     */
 
     @JsonGetter("havingStudents")
     public List<String> havingStudentsToJson() {
@@ -86,6 +88,7 @@ public class Program {
         return list;
     }
 
+    /*
     @JsonGetter("havingProfessors")
     public List<String> havingProfessorsToJson() {
         List<String> list = new ArrayList<>();
@@ -94,4 +97,6 @@ public class Program {
         }
         return list;
     }
+
+     */
 }

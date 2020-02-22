@@ -2,7 +2,7 @@ package com.csye6225.springsemester2020.service;
 
 import com.csye6225.springsemester2020.database.InMemoryDatabase;
 import com.csye6225.springsemester2020.model.Course;
-import com.csye6225.springsemester2020.model.Professor;
+//import com.csye6225.springsemester2020.model.Professor;
 import com.csye6225.springsemester2020.model.Program;
 import com.csye6225.springsemester2020.model.Student;
 

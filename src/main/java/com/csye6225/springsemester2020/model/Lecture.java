@@ -1,23 +1,26 @@
 package com.csye6225.springsemester2020.model;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonPropertyOrder({"lectureId", "name", "note", "assoMaterial", "courseName"})
 public class Lecture {
 
     private long lectureId;
     private String name;
     private String note;
     private String assoMaterial;
-    private String CourseName;
+    private String courseName;
 
     public Lecture() {
 
     }
 
-    public Lecture(long lectureId, String name, String note, String assoMaterial, String CourseName) {
+    public Lecture(long lectureId, String name, String note, String assoMaterial, String courseName) {
         this.lectureId = lectureId;
         this.name = name;
         this.note = note;
         this.assoMaterial = assoMaterial;
-        this.CourseName = CourseName;
+        this.courseName = courseName;
     }
 
     public String getName() {
@@ -53,10 +56,11 @@ public class Lecture {
     }
 
     public String getCourseName() {
-        return CourseName;
+        return courseName;
     }
 
     public void setCourseName(String courseName) {
-        CourseName = courseName;
+        this.courseName = courseName;
     }
+
 }

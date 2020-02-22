@@ -64,13 +64,6 @@
         </dependency>
         <!-- LULU -->
 
-        <!-- JSON -->
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-moxy</artifactId>
-        </dependency>
-        <!-- JSON -->
-
         <!-- XML -->
         <dependency>
             <groupId>javax.xml.bind</groupId>

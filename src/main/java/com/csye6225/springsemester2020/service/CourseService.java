@@ -12,13 +12,8 @@ public class CourseService {
     private Map<Long, Course> courseMap = InMemoryDatabase.getCourseMap();
     private Map<Long, Program> programMap = InMemoryDatabase.getProgramMap();
     private Map<Long, Student> studentMap = InMemoryDatabase.getStudentMap();
-    private Map<Long, Lecture> lectureMap = InMemoryDatabase.getLectureMap();
-    private Map<Long, Professor> professorMap = InMemoryDatabase.getProfessorMap();
     private static long generateId = InMemoryDatabase.getCourseMap().size();
 
-    public CourseService() {
-
-    }
 
     public List<Course> getAllCourses() {
         return new ArrayList<>(courseMap.values());
@@ -45,11 +40,23 @@ public class CourseService {
         courseMap.put(course.getCourseId(), course);
         return course;
     }
-
+    /*
     public Course addCourseOfOneProgram(long programId, Course course) {
         course.setProgramName(programMap.get(programId).getName());
         addCourse(course);
         programMap.get(programId).getHavingCourses().put(course.getCourseId(), course);
+        return course;
+    }
+
+     */
+
+    // CourseOfOneStudentOfOneProgram
+    public Course addCourseOfStudentOfProgram(long programId, long studentId, Course course) {
+        course.setProgramName(programMap.get(programId).getName());
+        course.getHavingStudents().put(studentId, studentMap.get(studentId));
+        addCourse(course);
+        programMap.get(programId).getHavingCourses().put(course.getCourseId(), course);
+        studentMap.get(studentId).getEnrolledCourses().put(course.getCourseId(), course);
         return course;
     }
 
@@ -67,6 +74,7 @@ public class CourseService {
         return c;
     }
 
+    /*
     public Course updateCourseOfOneProgram(long programId, Course course) {
         if (programMap.get(programId) != null && programMap.get(programId).getHavingCourses().containsKey(course.getCourseId())) {
             return updateCourse(course);
@@ -74,11 +82,22 @@ public class CourseService {
         return null;
     }
 
-    public Course deleteCourse(long courseId) {
-        if (courseMap.containsKey(courseId)) {
-            for (long studentKey : courseMap.get(courseId).getHavingStudents().keySet()) {
-                studentMap.get(studentKey).getEnrolledCourses().remove(courseId);
+     */
+    public Course updateCourseOfOneStudentOfOneProgram(long programId, long studentId, Course course) {
+        if (studentMap.get(studentId) != null && studentMap.get(studentId).getEnrolledCourses().containsKey(course.getCourseId())) {
+            if (programMap.get(programId) != null && programMap.get(programId).getHavingCourses().containsKey(course.getCourseId())) {
+                return updateCourse(course);
             }
+        }
+        return null;
+    }
+
+    public Course deleteCourse(long courseId) {
+        if (!courseMap.containsKey(courseId)) {
+            return null;
+        }
+        for (long studentKey : courseMap.get(courseId).getHavingStudents().keySet()) {
+            studentMap.get(studentKey).getEnrolledCourses().remove(courseId);
         }
         return courseMap.remove(courseId);
     }
@@ -119,6 +138,8 @@ public class CourseService {
             }
         }
     }
+
+
 
 
 }
