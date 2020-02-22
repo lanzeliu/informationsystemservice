@@ -1,11 +1,14 @@
 package com.csye6225.springsemester2020.resource;
 
 import com.csye6225.springsemester2020.model.Course;
+import com.csye6225.springsemester2020.model.Lecture;
 import com.csye6225.springsemester2020.model.Student;
 import com.csye6225.springsemester2020.service.CourseService;
+import com.csye6225.springsemester2020.service.LectureService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.util.ArrayList;
 import java.util.List;
 
 @Path("/courses")
@@ -14,6 +17,7 @@ import java.util.List;
 public class CourseResource {
 
     CourseService courseService = new CourseService();
+    LectureService lectureService = new LectureService();
 
     @GET
     public List<Course> getAllCourses() {
@@ -50,8 +54,39 @@ public class CourseResource {
         courseService.deleteStudentFromOneCourse(courseId, studentId);
     }
 
+    // lectureOfCourses
+    @GET
     @Path("/{courseId}/lectures")
-    public LectureOfCourseResource getLectureResource(@PathParam("courseId") long courseId) {
-        return new LectureOfCourseResource();
+    public List<Lecture> getAllLecturesOfOneCourses(@PathParam("courseId") long courseId) {
+        return new ArrayList<>(courseService.getOneCourse(courseId).getHavingLectures().values());
     }
+
+    @GET
+    @Path("/{courseId}/lectures/{lectureId}")
+    public Lecture getOneLectureOfOneCourse(@PathParam("courseId") long courseId, @PathParam("lectureId") long lectureId) {
+        return lectureService.getOneLectureOfOneCourse(courseId, lectureId);
+    }
+
+    @POST
+    @Path("/{courseId}/lectures")
+    public Lecture addLectureIntoOneCourse(@PathParam("courseId") long courseId, Lecture lecture) {
+        return lectureService.addLecture(courseId, lecture);
+    }
+
+    @PUT
+    @Path("/{courseId}/lectures/{lectureId}")
+    public Lecture updateLectureOfOneCourse(@PathParam("courseId") long courseId,
+                                            @PathParam("lectureId") long lectureId,
+                                            Lecture lecture) {
+        lecture.setLectureId(lectureId);
+        return lectureService.updateLecture(courseId, lecture);
+    }
+
+    @DELETE
+    @Path("/{courseId}/lectures/{lectureId}")
+    public void deleteLectureOfOneCourse(@PathParam("courseId") long courseId,
+                                            @PathParam("lectureId") long lectureId) {
+        lectureService.deleteLecture(courseId, lectureId);
+    }
+
 }

@@ -48,15 +48,12 @@ public class StudentService {
         return student;
     }
 
-    /*
     public Student addStudentIntoOneProgram(long programId, Student student) {
         student.setProgramName(programMap.get(programId).getName());
         addStudent(student);
         programMap.get(programId).getHavingStudents().put(student.getStudentId(), student);
         return student;
     }
-
-     */
 
     public Student addStudentIntoOneCourseOneProgram(long programId, long courseId, Student student) {
         student.setProgramName(programMap.get(programId).getName());
@@ -77,7 +74,7 @@ public class StudentService {
         s.setImageUrl(student.getImageUrl());
         return s;
     }
-/*
+
     public Student updateStudentOfOneProgram(long programId, Student student) {
         if (programMap.get(programId) != null && programMap.get(programId).getHavingStudents().containsKey(student.getStudentId())) {
             return updateStudent(student);
@@ -85,7 +82,6 @@ public class StudentService {
         return null;
     }
 
- */
 
     public Student updateStudentOfOneCourseOfOneProgram(long programId, long courseId, Student student) {
         if (courseMap.get(courseId) != null && courseMap.get(courseId).getHavingStudents().containsKey(student.getStudentId())) {

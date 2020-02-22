@@ -11,7 +11,16 @@ import java.util.Map;
 public class LectureService {
 
     private Map<Long, Course> courseMap = InMemoryDatabase.getCourseMap();
+    private Map<Long, Lecture> lectureMap = InMemoryDatabase.getLectureMap();
     private static long generateId = InMemoryDatabase.getCourseMap().size();
+
+    public List<Lecture> getAllLectures() {
+        return new ArrayList<>(lectureMap.values());
+    }
+
+    public Lecture getOneLecture(long lectureId) {
+        return lectureMap.get(lectureId);
+    }
 
     public List<Lecture> getAllLectureOfOneCourse(long courseId) {
         return new ArrayList<>(courseMap.get(courseId).getHavingLectures().values());

@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class InMemoryDatabase {
 
-    //private static Map<Long, Professor> professorMap = new HashMap<>();
+    private static Map<Long, Professor> professorMap = new HashMap<>();
     private static Map<Long, Course> courseMap = new HashMap<>();
     private static Map<Long, Lecture> lectureMap = new HashMap<>();
     private static Map<Long, Program> programMap = new HashMap<>();
@@ -31,8 +31,8 @@ public class InMemoryDatabase {
         Lecture lecture1 = new Lecture(1L, "First lecture for Discrete Math", "note1", "assoMaterial1", course1.getName());
         Lecture lecture2 = new Lecture(2L, "First lecture for Cloud Computing", "note2", "assoMaterial2", course2.getName());
 
-        //Professor professor1 = new Professor(1L, "Dianyou", "Chen", "Department of CS", program1.getName());
-        //Professor professor2 = new Professor(2L, "Jami", "A", "Department of IS", program2.getName());
+        Professor professor1 = new Professor(1L, "Preeti", "", "Department of CS");
+        Professor professor2 = new Professor(2L, "Jami", "Avinav", "Department of IS");
 
         programMap.put(1L, program1);
         programMap.put(2L, program2);
@@ -43,8 +43,8 @@ public class InMemoryDatabase {
         studentMap.put(1L, student1);
         studentMap.put(2L, student2);
 
-        //professorMap.put(professor1.getProfessorId(), professor1);
-        //professorMap.put(professor2.getProfessorId(), professor2);
+        professorMap.put(professor1.getProfessorId(), professor1);
+        professorMap.put(professor2.getProfessorId(), professor2);
 
         lectureMap.put(1L, lecture1);
         lectureMap.put(2L, lecture2);
@@ -70,11 +70,9 @@ public class InMemoryDatabase {
     }
 
 
-    /*public static Map<Long, Professor> getProfessorMap() {
+    public static Map<Long, Professor> getProfessorMap() {
         return professorMap;
     }
-
-     */
 
     public static Map<Long, Course> getCourseMap() {
         return courseMap;

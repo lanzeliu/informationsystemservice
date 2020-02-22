@@ -40,15 +40,13 @@ public class CourseService {
         courseMap.put(course.getCourseId(), course);
         return course;
     }
-    /*
+
     public Course addCourseOfOneProgram(long programId, Course course) {
         course.setProgramName(programMap.get(programId).getName());
         addCourse(course);
         programMap.get(programId).getHavingCourses().put(course.getCourseId(), course);
         return course;
     }
-
-     */
 
     // CourseOfOneStudentOfOneProgram
     public Course addCourseOfStudentOfProgram(long programId, long studentId, Course course) {
@@ -74,7 +72,6 @@ public class CourseService {
         return c;
     }
 
-    /*
     public Course updateCourseOfOneProgram(long programId, Course course) {
         if (programMap.get(programId) != null && programMap.get(programId).getHavingCourses().containsKey(course.getCourseId())) {
             return updateCourse(course);
@@ -82,7 +79,6 @@ public class CourseService {
         return null;
     }
 
-     */
     public Course updateCourseOfOneStudentOfOneProgram(long programId, long studentId, Course course) {
         if (studentMap.get(studentId) != null && studentMap.get(studentId).getEnrolledCourses().containsKey(course.getCourseId())) {
             if (programMap.get(programId) != null && programMap.get(programId).getHavingCourses().containsKey(course.getCourseId())) {
