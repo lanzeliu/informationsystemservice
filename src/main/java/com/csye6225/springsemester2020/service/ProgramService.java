@@ -13,6 +13,9 @@ import java.util.Map;
 public class ProgramService {
 
     private Map<Long, Program> programMap = InMemoryDatabase.getProgramMap();
+    private Map<Long, Course> courseMap = InMemoryDatabase.getCourseMap();
+    private Map<Long, Student> studentMap = InMemoryDatabase.getStudentMap();
+    private static long generateId = InMemoryDatabase.getProgramMap().size();
 
     public ProgramService() {
 
@@ -27,7 +30,7 @@ public class ProgramService {
     }
 
     public Program addProgram(Program program) {
-        program.setProgramId(programMap.size() + 1);
+        program.setProgramId(++generateId);
         programMap.put(program.getProgramId(), program);
         return program;
     }
@@ -37,38 +40,36 @@ public class ProgramService {
             return null;
         }
 
-        for (Course c : programMap.get(program.getProgramId()).getHavingCourses().values()) {
-            c.setPossessedProgramName(program.getName());
-        }
+        Program p = programMap.get(program.getProgramId());
+        p.setName(program.getName());
 
+        for (Course c : programMap.get(program.getProgramId()).getHavingCourses().values()) {
+            c.setProgramName(program.getName());
+        }
         for (Student s : programMap.get(program.getProgramId()).getHavingStudents().values()) {
             s.setProgramName(program.getName());
         }
-
-        for (Professor p : programMap.get(program.getProgramId()).getHavingProfessors().values()) {
-            p.setBelongedProgramName(program.getName());
-        }
-
-        program.setHavingCourses(programMap.get(program.getProgramId()).getHavingCourses());
-        program.setHavingStudents(programMap.get(program.getProgramId()).getHavingStudents());
-        program.setHavingProfessors(programMap.get(program.getProgramId()).getHavingProfessors());
-
-        programMap.put(program.getProgramId(), program);
 
         return program;
     }
 
     public Program deleteProgram(long programId) {
-        for (Course c : programMap.get(programId).getHavingCourses().values()) {
-            c.setPossessedProgramName(null);
+        if (!programMap.containsKey(programId)) {
+            return null;
         }
 
-        for (Student s : programMap.get(programId).getHavingStudents().values()) {
-            s.setProgramName(null);
+        for (long courseKey : programMap.get(programId).getHavingCourses().keySet()) {
+            for (long studentKey : courseMap.get(courseKey).getHavingStudents().keySet()) {
+                studentMap.get(studentKey).getEnrolledCourses().remove(courseKey);
+            }
+            courseMap.remove(courseKey);
         }
 
-        for (Professor p : programMap.get(programId).getHavingProfessors().values()) {
-            p.setBelongedProgramName(null);
+        for (long studentKey : programMap.get(programId).getHavingStudents().keySet()) {
+            for (long courseKey : studentMap.get(studentKey).getEnrolledCourses().keySet()) {
+                courseMap.get(courseKey).getHavingStudents().remove(studentKey);
+            }
+            studentMap.remove(studentKey);
         }
         
         return programMap.remove(programId);

@@ -3,10 +3,7 @@ package com.csye6225.springsemester2020.resource;
 import com.csye6225.springsemester2020.model.Student;
 import com.csye6225.springsemester2020.service.StudentService;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
+import javax.ws.rs.*;
 import java.util.List;
 
 public class StudentOfProgramResource {
@@ -27,5 +24,18 @@ public class StudentOfProgramResource {
     @POST
     public Student addStudentIntoOneProgram(@PathParam("programId") long programId, Student student) {
         return studentService.addStudentIntoOneProgram(programId, student);
+    }
+
+    @PUT
+    @Path("/{studentId}")
+    public Student updateStudent(@PathParam("programId") long programId, @PathParam("studentId") long studentId, Student student) {
+        student.setStudentId(studentId);
+        return studentService.updateStudentOfOneProgram(programId, student);
+    }
+
+    @DELETE
+    @Path("/{studentId}")
+    public void deleteStudent(@PathParam("programId") long programId, @PathParam("studentId") long studentId) {
+        studentService.deleteStudentOfOneProgram(programId, studentId);
     }
 }

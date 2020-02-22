@@ -1,30 +1,36 @@
 package com.csye6225.springsemester2020.model;
 
+import com.fasterxml.jackson.annotation.*;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+@JsonPropertyOrder({"courseId", "name", "programName", "roster", "board", "havingLectures", "havingStudents"})
 public class Course {
 
     private long courseId;
     private String name;
     private String roster;
     private String board;
+    private String programName;
+
+    @JsonIgnore
     private Map<Long, Lecture> havingLectures = new HashMap<>();
-    private Map<Long, Student> havingStudent = new HashMap<>();
-    private Professor professor;
-    private Student TA;
-    private String possessedProgramName;
+    @JsonIgnore
+    private Map<Long, Student> havingStudents = new HashMap<>();
 
     public Course() {
 
     }
 
-    public Course(long courseId, String name, String roster, String board, String possessedProgram) {
+    public Course(long courseId, String name, String roster, String board, String programName) {
         this.courseId = courseId;
         this.name = name;
         this.roster = roster;
         this.board = board;
-        this.possessedProgramName = possessedProgram;
+        this.programName = programName;
     }
 
     public long getCourseId() {
@@ -67,35 +73,37 @@ public class Course {
         this.havingLectures = havingLectures;
     }
 
-    public Map<Long, Student> getHavingStudent() {
-        return havingStudent;
+    public Map<Long, Student> getHavingStudents() {
+        return havingStudents;
     }
 
-    public void setHavingStudent(Map<Long, Student> havingStudent) {
-        this.havingStudent = havingStudent;
+    public void setHavingStudents(Map<Long, Student> havingStudents) {
+        this.havingStudents = havingStudents;
     }
 
-    public Professor getProfessor() {
-        return professor;
+    public String getProgramName() {
+        return programName;
     }
 
-    public void setProfessor(Professor professor) {
-        this.professor = professor;
+    public void setProgramName(String programName) {
+        this.programName = programName;
     }
 
-    public Student getTA() {
-        return TA;
+    @JsonGetter("havingLectures")
+    public List<String> havingLecturesToJson() {
+        List<String> list = new ArrayList<>();
+        for (Lecture l : havingLectures.values()) {
+            list.add(l.getName());
+        }
+        return list;
     }
 
-    public void setTA(Student TA) {
-        this.TA = TA;
-    }
-
-    public String getPossessedProgramName() {
-        return possessedProgramName;
-    }
-
-    public void setPossessedProgramName(String possessedProgramName) {
-        this.possessedProgramName = possessedProgramName;
+    @JsonGetter("havingStudents")
+    public List<String> havingStudentsToJson() {
+        List<String> list = new ArrayList<>();
+        for (Student s : havingStudents.values()) {
+            list.add(s.getFirstName() + " " + s.getLastName());
+        }
+        return list;
     }
 }

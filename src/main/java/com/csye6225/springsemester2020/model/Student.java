@@ -1,17 +1,24 @@
 package com.csye6225.springsemester2020.model;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+@JsonPropertyOrder({"studentId", "firstName", "lastName", "imageUrl", "programName", "enrolledCourses"})
 public class Student {
 
     private long studentId;
     private String firstName;
     private String lastName;
     private String imageUrl;
-    private Map<Long, Course> enrolledCourses = new HashMap<>();
     private String programName;
-    private String TACourse;
+    @JsonIgnore
+    private Map<Long, Course> enrolledCourses = new HashMap<>();
 
     public Student() {
 
@@ -77,15 +84,12 @@ public class Student {
         this.programName = programName;
     }
 
-    public String getTACourse() {
-        return TACourse;
-    }
-
-    public void setTACourse(String TACourse) {
-        this.TACourse = TACourse;
-    }
-
-    public void deleteTACourse() {
-        this.TACourse = null;
+    @JsonGetter("enrolledCourses")
+    public List<String> enrolledCoursesToJson() {
+        List<String> list = new ArrayList<>();
+        for (Course c : enrolledCourses.values()) {
+            list.add(c.getName());
+        }
+        return list;
     }
 }

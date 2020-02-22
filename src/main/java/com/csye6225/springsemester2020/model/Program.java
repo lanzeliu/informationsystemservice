@@ -1,14 +1,22 @@
 package com.csye6225.springsemester2020.model;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Program {
 
     private long programId;
     private String name;
+    @JsonIgnore
     private Map<Long, Course> havingCourses = new HashMap<>();
+    @JsonIgnore
     private Map<Long, Student> havingStudents = new HashMap<>();
+    @JsonIgnore
     private Map<Long, Professor> havingProfessors = new HashMap<>();
 
     public Program() {
@@ -58,5 +66,32 @@ public class Program {
 
     public void setHavingProfessors(Map<Long, Professor> havingProfessors) {
         this.havingProfessors = havingProfessors;
+    }
+
+    @JsonGetter("havingStudents")
+    public List<String> havingStudentsToJson() {
+        List<String> list = new ArrayList<>();
+        for (Student s : havingStudents.values()) {
+            list.add(s.getFirstName() + " " + s.getLastName());
+        }
+        return list;
+    }
+
+    @JsonGetter("havingCourses")
+    public List<String> havingCoursesToJson() {
+        List<String> list = new ArrayList<>();
+        for (Course c : havingCourses.values()) {
+            list.add(c.getName());
+        }
+        return list;
+    }
+
+    @JsonGetter("havingProfessors")
+    public List<String> havingProfessorsToJson() {
+        List<String> list = new ArrayList<>();
+        for (Professor p : havingProfessors.values()) {
+            list.add(p.getFirstName() + " " + p.getLastName());
+        }
+        return list;
     }
 }

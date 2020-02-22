@@ -1,6 +1,10 @@
 package com.csye6225.springsemester2020.model;
 
-import java.util.Date;
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class Professor {
@@ -10,9 +14,9 @@ public class Professor {
     private String firstName;
     private String lastName;
     private String department;
-    private Date joiningDate;
-    private Map<Long, Course> teachingCourses;
     private String belongedProgramName;
+    @JsonIgnore
+    private Map<Long, Course> teachingCourses;
 
     // Default constructor
     public Professor() {
@@ -25,7 +29,6 @@ public class Professor {
         this.firstName = firstName;
         this.lastName = lastName;
         this.department = department;
-        this.joiningDate = new Date();
         this.belongedProgramName = belongedProgramName;
     }
 
@@ -46,10 +49,6 @@ public class Professor {
         return department;
     }
 
-    public Date getJoiningDate() {
-        return joiningDate;
-    }
-
     // Setter
     public void setProfessorId(long professorId) {
         this.professorId = professorId;
@@ -65,10 +64,6 @@ public class Professor {
 
     public void setDepartment(String department) {
         this.department = department;
-    }
-
-    public void setJoiningDate(Date joiningDate) {
-        this.joiningDate = joiningDate;
     }
 
     public Map<Long, Course> getTeachingCourses() {
@@ -91,5 +86,17 @@ public class Professor {
         this.belongedProgramName = belongedProgramName;
     }
 
+    public void setTeachingCourses(Map<Long, Course> teachingCourses) {
+        this.teachingCourses = teachingCourses;
+    }
+
+    @JsonGetter("teachingCourses")
+    public List<String> teachingCoursesToJson() {
+        List<String> list = new ArrayList<>();
+        for (Course c : teachingCourses.values()) {
+            list.add(c.getName());
+        }
+        return list;
+    }
 
 }

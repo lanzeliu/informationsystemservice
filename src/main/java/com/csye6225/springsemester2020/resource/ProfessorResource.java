@@ -64,3 +64,4 @@ public class ProfessorResource {
         return professorService.deleteProfessor(professorId);
     }
 }
+
