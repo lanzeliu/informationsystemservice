@@ -35,31 +35,31 @@ Requirement:
 
 URIs:
 1. programs
-  i. /programs GET, POST
-  ii. /programs/{programId} GET, PUT, DELETE
-  iii. /programs/{programId}/courses GET, POST
-  iv. /programs/{programId}/courses/{courseId} GET, PUT, DELETE
-  v. /programs/{programId}/students GET, POST
-  vi. /programs/{programId}/students/{studentId} GET, PUT, DELETE
-  vii. /programs/{programId}/courses/{courseId}/students GET, POST
-  viii. /programs/{programId}/courses/{courseId}/students/{studentId} GET, PUT, DELETE
-  ix. /programs/{programId}/students/{studentId}/courses GET, POST
-  x. /programs/{programId}/students/{studentId}/courses/{courseId} GET, PUT, DELETE
+- /programs GET, POST
+- /programs/{programId} GET, PUT, DELETE
+- /programs/{programId}/courses GET, POST
+- /programs/{programId}/courses/{courseId} GET, PUT, DELETE
+- /programs/{programId}/students GET, POST
+- /programs/{programId}/students/{studentId} GET, PUT, DELETE
+- /programs/{programId}/courses/{courseId}/students GET, POST
+- /programs/{programId}/courses/{courseId}/students/{studentId} GET, PUT, DELETE
+- /programs/{programId}/students/{studentId}/courses GET, POST
+- /programs/{programId}/students/{studentId}/courses/{courseId} GET, PUT, DELETE
   
 2. students
-  i. /students GET
-  ii. /students/{studentId} GET
+- /students GET
+- /students/{studentId} GET
 
 3.professors
-  i. /professors GET, POST
-  ii. /professors/{professorId} GET, PUT, DELETE
+- /professors GET, POST
+- /professors/{professorId} GET, PUT, DELETE
   
 4.courses
-  i. /courses GET
-  ii. /courses/{courseId} GET
-  iii. /courses/{courseId}/lectures GET, POST
-  iv. /courses/{courseId}/lectures/{lectureId} GET, PUT, DELETE
+- /courses GET
+- /courses/{courseId} GET
+- /courses/{courseId}/lectures GET, POST
+- /courses/{courseId}/lectures/{lectureId} GET, PUT, DELETE
   
 5. lectures
-  i. /lectures GET
-  ii. /lectures/{lectureId} GET
+- /lectures GET
+- /lectures/{lectureId} GET
