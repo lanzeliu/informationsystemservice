@@ -8,12 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe7df8d-acd7-4ce6-93e0-57c62bd3001b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/database/InMemoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/database/InMemoryDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/resource/CourseResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/resource/CourseResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/resource/LectureOfCourseResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/service/LectureService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/service/LectureService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/database/InMemoryDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/database/InMemoryDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/database/InMemoryDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/database/InMemoryDatabase.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,6 +307,8 @@
       <workItem from="1582321765157" duration="14951000" />
       <workItem from="1582348542832" duration="5136000" />
       <workItem from="1582402057463" duration="2111000" />
+      <workItem from="1584218888967" duration="133000" />
+      <workItem from="1584219069031" duration="1142000" />
     </task>
     <servers />
   </component>
