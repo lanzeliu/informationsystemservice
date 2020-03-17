@@ -1,7 +1,7 @@
-package com.csye6225.springsemester2020.resource;
+package com.csye6225.springsemester2020.assignment1.resource;
 
-import com.csye6225.springsemester2020.model.Professor;
-import com.csye6225.springsemester2020.service.ProfessorService;
+import com.csye6225.springsemester2020.assignment1.model.Professor;
+import com.csye6225.springsemester2020.assignment1.service.ProfessorService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

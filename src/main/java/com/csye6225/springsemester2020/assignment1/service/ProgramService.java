@@ -1,10 +1,10 @@
-package com.csye6225.springsemester2020.service;
+package com.csye6225.springsemester2020.assignment1.service;
 
-import com.csye6225.springsemester2020.database.InMemoryDatabase;
-import com.csye6225.springsemester2020.model.Course;
+import com.csye6225.springsemester2020.assignment1.database.InMemoryDatabase;
+import com.csye6225.springsemester2020.assignment1.model.Course;
 //import com.csye6225.springsemester2020.model.Professor;
-import com.csye6225.springsemester2020.model.Program;
-import com.csye6225.springsemester2020.model.Student;
+import com.csye6225.springsemester2020.assignment1.model.Program;
+import com.csye6225.springsemester2020.assignment1.model.Student;
 
 import java.util.ArrayList;
 import java.util.List;

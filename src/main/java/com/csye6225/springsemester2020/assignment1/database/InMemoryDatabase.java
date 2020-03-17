@@ -1,6 +1,6 @@
-package com.csye6225.springsemester2020.database;
+package com.csye6225.springsemester2020.assignment1.database;
 
-import com.csye6225.springsemester2020.model.*;
+import com.csye6225.springsemester2020.assignment1.model.*;
 
 import java.util.HashMap;
 import java.util.Map;

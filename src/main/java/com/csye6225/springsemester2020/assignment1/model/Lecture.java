@@ -1,4 +1,4 @@
-package com.csye6225.springsemester2020.model;
+package com.csye6225.springsemester2020.assignment1.model;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
