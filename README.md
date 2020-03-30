@@ -88,7 +88,7 @@ URIs:
      - /dynamodb/courses/{courseId}/students/{studentId} GET, DELETE
 3. Board
      - /dynamodb/boards GET, POST
-     - /dynamodb/boards/{boardId} GET, DELETE
+     - /dynamodb/boards/{boardId} GET
 4. Announcement
      - /dynamodb/anouncements GET, POST
      - /dynamodb/announcements/{announcementId} GET, PUT, DELETE
