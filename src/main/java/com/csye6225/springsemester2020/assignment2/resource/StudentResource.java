@@ -42,6 +42,7 @@ public class StudentResource {
     @DELETE
     @Path("/{studentId}")
     public void deleteStudent(@PathParam("studentId") String studentId) {
+        studentService.deleteStudent(studentId);
     }
 
     // /students/studentId/courses

@@ -25,7 +25,7 @@ public class AnnouncementService {
     }
 
     public Announcement updateAnnouncement(Announcement announcement) {
-        Announcement a = mapper.load(Announcement.class, announcement.getId());
+        Announcement a = mapper.load(Announcement.class, announcement.getAnnouncementId());
         if (a != null) {
             a.setAnnouncementText(announcement.getAnnouncementText());
             a.setBoardId(announcement.getBoardId());
@@ -36,6 +36,9 @@ public class AnnouncementService {
     }
 
     public void deleteAnnouncement(String announcementId) {
-        mapper.delete(announcementId);
+        Announcement a = mapper.load(Announcement.class, announcementId);
+        if (a != null) {
+            mapper.delete(a);
+        }
     }
 }

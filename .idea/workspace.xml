@@ -8,54 +8,17 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe7df8d-acd7-4ce6-93e0-57c62bd3001b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/database/InMemoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/database/InMemoryDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/model/Lecture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/model/Lecture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/model/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/model/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/model/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/model/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/resource/CourseResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/resource/CourseResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/resource/LectureResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/resource/LectureResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/resource/ProfessorResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/resource/ProfessorResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/resource/ProgramResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/resource/ProgramResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/resource/StudentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/resource/StudentResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/service/LectureService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/service/LectureService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/service/ProfessorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/service/ProfessorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/service/ProgramService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/service/ProgramService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment1/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/database/InMemoryDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/model/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/model/Lecture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/model/Professor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/model/Program.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/resource/CourseResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/resource/LectureResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/resource/ProfessorResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/resource/ProgramResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/resource/StudentResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/service/CourseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/service/LectureService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/service/ProfessorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/service/ProgramService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/database/InMemoryDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/model/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/model/Lecture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/model/Professor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/model/Program.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/resource/CourseResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/resource/LectureResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/resource/ProfessorResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/resource/ProgramResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/resource/StudentResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/service/CourseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/service/LectureService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/service/ProfessorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/service/ProgramService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment2/resource/StudentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment2/resource/StudentResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment2/service/AnnouncementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment2/service/AnnouncementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment2/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/springsemester2020/assignment2/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/assignment2/resource/StudentResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/assignment2/resource/StudentResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/assignment2/service/AnnouncementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/assignment2/service/AnnouncementService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/assignment2/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/csye6225/springsemester2020/assignment2/service/BoardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/informationsystemservice.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/informationsystemservice.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/assignment2/resource/StudentResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/assignment2/resource/StudentResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/assignment2/service/AnnouncementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/assignment2/service/AnnouncementService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/assignment2/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/informationsystemservice/WEB-INF/classes/com/csye6225/springsemester2020/assignment2/service/BoardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +83,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.30" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -331,7 +294,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -369,6 +332,13 @@
       <workItem from="1584218888967" duration="133000" />
       <workItem from="1584219069031" duration="27477000" />
       <workItem from="1584390836665" duration="7559000" />
+      <workItem from="1584415740032" duration="7000" />
+      <workItem from="1584415873433" duration="336000" />
+      <workItem from="1584658451149" duration="8000" />
+      <workItem from="1584658465184" duration="206000" />
+      <workItem from="1584658759704" duration="866000" />
+      <workItem from="1585600021711" duration="5986000" />
+      <workItem from="1585611709856" duration="135000" />
     </task>
     <servers />
   </component>
@@ -389,89 +359,96 @@
     </state>
     <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1582060893117" />
     <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584411751096" />
+    <state x="532" y="417" width="618" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584659108284">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="532" y="417" width="618" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1050@0.0.1680.1050" timestamp="1584659108284" />
     <state x="385" y="127" key="CommitChangelistDialog2" timestamp="1582070863769">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="385" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582070863769" />
-    <state width="1126" height="211" key="GridCell.Tab.0.bottom" timestamp="1584415449067">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1585611663187">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="211" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449067" />
-    <state width="1126" height="211" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053687" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584416453269" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663187" />
     <state width="1126" height="247" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309428" />
-    <state width="1126" height="211" key="GridCell.Tab.0.center" timestamp="1584415449066">
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1585611663186">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="211" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449066" />
-    <state width="1126" height="211" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053684" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584416453268" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.985@0.0.1680.1050" timestamp="1584416453115" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663186" />
     <state width="1126" height="247" key="GridCell.Tab.0.center/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309427" />
-    <state width="1126" height="211" key="GridCell.Tab.0.left" timestamp="1584415449066">
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1585611663185">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="211" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449066" />
-    <state width="1126" height="211" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053682" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584416453268" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.962@0.23.1680.962" timestamp="1584416453095" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663185" />
     <state width="1126" height="247" key="GridCell.Tab.0.left/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309426" />
-    <state width="1126" height="211" key="GridCell.Tab.0.right" timestamp="1584415449067">
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1585611663187">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="211" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449067" />
-    <state width="1126" height="211" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053686" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584416453269" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663187" />
     <state width="1126" height="247" key="GridCell.Tab.0.right/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309428" />
-    <state width="1126" height="211" key="GridCell.Tab.1.bottom" timestamp="1584415449077">
+    <state width="1126" height="211" key="GridCell.Tab.1.bottom" timestamp="1585611663176">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1126" height="211" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449077" />
-    <state width="1126" height="211" key="GridCell.Tab.1.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053507" />
+    <state width="1126" height="211" key="GridCell.Tab.1.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663176" />
     <state width="1126" height="247" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309433" />
-    <state width="1126" height="211" key="GridCell.Tab.1.center" timestamp="1584415449068">
+    <state width="1126" height="211" key="GridCell.Tab.1.center" timestamp="1585611663175">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1126" height="211" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449068" />
-    <state width="1126" height="211" key="GridCell.Tab.1.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053506" />
+    <state width="1126" height="211" key="GridCell.Tab.1.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663175" />
     <state width="1126" height="247" key="GridCell.Tab.1.center/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309432" />
-    <state width="1126" height="211" key="GridCell.Tab.1.left" timestamp="1584415449068">
+    <state width="1126" height="211" key="GridCell.Tab.1.left" timestamp="1585611663175">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1126" height="211" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449068" />
-    <state width="1126" height="211" key="GridCell.Tab.1.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053505" />
+    <state width="1126" height="211" key="GridCell.Tab.1.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663175" />
     <state width="1126" height="247" key="GridCell.Tab.1.left/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309431" />
-    <state width="1126" height="211" key="GridCell.Tab.1.right" timestamp="1584415449069">
+    <state width="1126" height="211" key="GridCell.Tab.1.right" timestamp="1585611663176">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1126" height="211" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449069" />
-    <state width="1126" height="211" key="GridCell.Tab.1.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053506" />
+    <state width="1126" height="211" key="GridCell.Tab.1.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663176" />
     <state width="1126" height="247" key="GridCell.Tab.1.right/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309432" />
-    <state width="1126" height="211" key="GridCell.Tab.2.bottom" timestamp="1584415449084">
+    <state width="1126" height="211" key="GridCell.Tab.2.bottom" timestamp="1585611663179">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1126" height="211" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449084" />
-    <state width="1126" height="211" key="GridCell.Tab.2.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053510" />
+    <state width="1126" height="211" key="GridCell.Tab.2.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663179" />
     <state width="1126" height="247" key="GridCell.Tab.2.bottom/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309431" />
-    <state width="1126" height="211" key="GridCell.Tab.2.center" timestamp="1584415449082">
+    <state width="1126" height="211" key="GridCell.Tab.2.center" timestamp="1585611663178">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1126" height="211" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449082" />
-    <state width="1126" height="211" key="GridCell.Tab.2.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053508" />
+    <state width="1126" height="211" key="GridCell.Tab.2.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663178" />
     <state width="1126" height="247" key="GridCell.Tab.2.center/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309429" />
-    <state width="1126" height="211" key="GridCell.Tab.2.left" timestamp="1584415449079">
+    <state width="1126" height="211" key="GridCell.Tab.2.left" timestamp="1585611663177">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1126" height="211" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449079" />
-    <state width="1126" height="211" key="GridCell.Tab.2.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053508" />
+    <state width="1126" height="211" key="GridCell.Tab.2.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663177" />
     <state width="1126" height="247" key="GridCell.Tab.2.left/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309429" />
-    <state width="1126" height="211" key="GridCell.Tab.2.right" timestamp="1584415449083">
+    <state width="1126" height="211" key="GridCell.Tab.2.right" timestamp="1585611663178">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1126" height="211" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584415449083" />
-    <state width="1126" height="211" key="GridCell.Tab.2.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584414053509" />
+    <state width="1126" height="211" key="GridCell.Tab.2.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1585611663178" />
     <state width="1126" height="247" key="GridCell.Tab.2.right/1680.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1582321309430" />
     <state x="378" y="187" key="Maven.ArtifactSearchDialog" timestamp="1582266579184">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="378" y="187" key="Maven.ArtifactSearchDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582266579184" />
-    <state x="341" y="164" key="SettingsEditor" timestamp="1584393175826">
+    <state x="341" y="164" key="SettingsEditor" timestamp="1584658969327">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1584658969327" />
     <state x="341" y="164" key="SettingsEditor/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1584393175826" />
     <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582070830605">
       <screen x="0" y="0" width="1680" height="1050" />

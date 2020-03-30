@@ -41,11 +41,8 @@ public class BoardService {
     public void deleteBoard(String boardId) {
         Board b = mapper.load(Board.class, boardId);
         if (b != null) {
-            Course c = mapper.load(Course.class, b.getCourseId());
-            if (c != null) {
-                c.setBoardId(null);
-            }
+            mapper.delete(b);
         }
-        mapper.delete(boardId);
+
     }
 }
