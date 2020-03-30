@@ -80,20 +80,20 @@ Step 3 - Deploy the code to your beanstalk app. We will cover one of the feature
 URIs:
 1. Professor
      - /dynamodb/professors GET, POST
-     ii. /dynamodb/professors/{professorId} GET, PUT, DELETE
+     - /dynamodb/professors/{professorId} GET, PUT, DELETE
 2. Course
-     i. /dynamodb/courses GET, POST
-     ii. /dynamodb/courses/{courseId} GET, PUT, DELETE
-     iii. /dynamodb/courses/{courseId}/students GET, POST
-     iv. /dynamodb/courses/{courseId}/students/{studentId} GET, DELETE
+     - /dynamodb/courses GET, POST
+     - /dynamodb/courses/{courseId} GET, PUT, DELETE
+     - /dynamodb/courses/{courseId}/students GET, POST
+     - /dynamodb/courses/{courseId}/students/{studentId} GET, DELETE
 3. Board
-     i. /dynamodb/boards GET, POST
-     ii. /dynamodb/boards/{boardId} GET, DELETE
+     - /dynamodb/boards GET, POST
+     - /dynamodb/boards/{boardId} GET, DELETE
 4. Announcement
-     i. /dynamodb/anouncements GET, POST
-     ii. /dynamodb/announcements/{announcementId} GET, PUT, DELETE
+     - /dynamodb/anouncements GET, POST
+     - /dynamodb/announcements/{announcementId} GET, PUT, DELETE
 5. Student
-     i. /dynamodb/students GET, POST
-     ii. /dynamodb/students/{studentId} GET, PUT, DELETE
-     iii. /dynamodb/students/{studentId}/courses GET
-     iv. /dynamodb/students/{studentId}/courses/{courseId} GET, POST, DELETE
+     - /dynamodb/students GET, POST
+     - /dynamodb/students/{studentId} GET, PUT, DELETE
+     - /dynamodb/students/{studentId}/courses GET
+     - /dynamodb/students/{studentId}/courses/{courseId} GET, POST, DELETE
