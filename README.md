@@ -79,7 +79,7 @@ Step 3 - Deploy the code to your beanstalk app. We will cover one of the feature
 
 URIs:
 1. Professor
-     i. /dynamodb/professors GET, POST
+     - /dynamodb/professors GET, POST
      ii. /dynamodb/professors/{professorId} GET, PUT, DELETE
 2. Course
      i. /dynamodb/courses GET, POST
